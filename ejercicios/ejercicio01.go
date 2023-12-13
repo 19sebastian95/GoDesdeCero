@@ -1,7 +1,6 @@
 package ejercicios
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -9,11 +8,13 @@ func DevolverValores(valor string) (int, string) {
 
 	valorEntero, err := strconv.Atoi(valor)
 
-	if valorEntero > 100 {
-		fmt.Println("Es mayor a 100", valorEntero)
-	} else {
-		fmt.Println("Es menor a 100")
+	if err != nil {
+		return 0, "Hubo un error" + err.Error()
 	}
 
-	return valorEntero, err.Error()
+	if valorEntero > 100 {
+		return valorEntero, "Es mayor a 100"
+	} else {
+		return valorEntero, "Es menor a 100"
+	}
 }

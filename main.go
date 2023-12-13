@@ -26,9 +26,7 @@ func main() {
 	// 	fmt.Printf("%s \n", os)
 	//}
 
-	entero, err := ejercicios.DevolverValores("100")
+	entero, texto := ejercicios.DevolverValores("500")
 	fmt.Println(entero)
-	if err != "" {
-		fmt.Println(err)
-	}
+	fmt.Println(texto)
 }
