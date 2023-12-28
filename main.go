@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/19sebastian95/GoDesdeCero/ejercicios"
+	"github.com/19sebastian95/GoDesdeCero/funciones"
 )
 
 func main() {
@@ -26,7 +24,18 @@ func main() {
 	// 	fmt.Printf("%s \n", os)
 	//}
 
-	entero, texto := ejercicios.DevolverValores("500")
-	fmt.Println(entero)
-	fmt.Println(texto)
+	// entero, texto := ejercicios.DevolverValores("500")
+	// fmt.Println(entero)
+	// fmt.Println(texto)
+
+	//teclado.IngresoNumeros()
+	//iteraciones.IterarFor()
+
+	// ejercicios.Multiplicacion()
+
+	//files.SumaTabla()
+
+	//files.LeoArchivo()
+
+	funciones.LlamarClosure()
 }
