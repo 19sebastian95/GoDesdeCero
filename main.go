@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/19sebastian95/GoDesdeCero/funciones"
+	"github.com/19sebastian95/GoDesdeCero/mapas"
 )
 
 func main() {
@@ -37,5 +37,7 @@ func main() {
 
 	//files.LeoArchivo()
 
-	funciones.LlamarClosure()
+	//funciones.Exponencia(2)
+
+	mapas.MostrarMapas()
 }
