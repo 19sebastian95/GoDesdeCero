@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/19sebastian95/GoDesdeCero/goroutines"
+	"github.com/19sebastian95/GoDesdeCero/webserver"
 )
 
 func main() {
@@ -50,12 +48,12 @@ func main() {
 
 	//deferpanic.EjemploPanic()
 
-	canal1 := make(chan bool)
+	// canal1 := make(chan bool)
+	// go goroutines.MiNombreLento("Sebastian", canal1)
+	// fmt.Println("Estoy aqui")
+	// defer func() { <-canal1 }()
+	// var x string
+	// fmt.Scanln(&x)
 
-	go goroutines.MiNombreLento("Sebastian", canal1)
-
-	fmt.Println("Estoy aqui")
-	defer func() { <-canal1 }()
-	var x string
-	fmt.Scanln(&x)
+	webserver.MiWebServer()
 }
