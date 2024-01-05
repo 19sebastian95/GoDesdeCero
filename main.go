@@ -1,8 +1,7 @@
 package main
 
 import (
-	"github.com/19sebastian95/GoDesdeCero/ejer_interfaces"
-	"github.com/19sebastian95/GoDesdeCero/modelos"
+	deferpanic "github.com/19sebastian95/GoDesdeCero/deferPanic"
 )
 
 func main() {
@@ -44,6 +43,8 @@ func main() {
 
 	//users.AltaUsuario()
 
-	Pedro := new(modelos.Hombre)
-	ejer_interfaces.HumanosRespirando(Pedro)
+	// Pedro := new(modelos.Hombre)
+	// ejer_interfaces.HumanosRespirando(Pedro)
+
+	deferpanic.VemosDefer()
 }
