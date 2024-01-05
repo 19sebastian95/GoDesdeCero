@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/19sebastian95/GoDesdeCero/mapas"
+	"github.com/19sebastian95/GoDesdeCero/ejer_interfaces"
+	"github.com/19sebastian95/GoDesdeCero/modelos"
 )
 
 func main() {
@@ -39,5 +40,10 @@ func main() {
 
 	//funciones.Exponencia(2)
 
-	mapas.MostrarMapas()
+	// mapas.MostrarMapas()
+
+	//users.AltaUsuario()
+
+	Pedro := new(modelos.Hombre)
+	ejer_interfaces.HumanosRespirando(Pedro)
 }
