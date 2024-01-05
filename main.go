@@ -1,7 +1,9 @@
 package main
 
 import (
-	deferpanic "github.com/19sebastian95/GoDesdeCero/deferPanic"
+	"fmt"
+
+	"github.com/19sebastian95/GoDesdeCero/goroutines"
 )
 
 func main() {
@@ -46,5 +48,14 @@ func main() {
 	// Pedro := new(modelos.Hombre)
 	// ejer_interfaces.HumanosRespirando(Pedro)
 
-	deferpanic.VemosDefer()
+	//deferpanic.EjemploPanic()
+
+	canal1 := make(chan bool)
+
+	go goroutines.MiNombreLento("Sebastian", canal1)
+
+	fmt.Println("Estoy aqui")
+	defer func() { <-canal1 }()
+	var x string
+	fmt.Scanln(&x)
 }
